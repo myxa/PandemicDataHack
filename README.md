@@ -1,4 +1,10 @@
 # PandemicDataHack
+Навигация по файлам:
+- preprocessing.ipynb - чистка датасета
+- solution_MAE_Year.csv - сабмит с самой, на данный момент, хорошей моделью
+- CatBoost_model.ipynb - код с лучшей моделью
+
+
 ## Команда Дети Капитана Очевидности
 Что мы использовали в качестве лучшего решения: CatBoostRegressor.
 
