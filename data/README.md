@@ -1,2 +1,2 @@
 сюда мы положим все наши таблички
-https://www.kaggle.com/c/pandemicdatahack/data
+employements и все остальное можно скачать тут: https://www.kaggle.com/c/pandemicdatahack/data
