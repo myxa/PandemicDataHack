@@ -13,11 +13,14 @@ class Preprocess:
     def opener(self, data_path):
         return pd.read_csv(data_path, sep=';')
 
+    def drop_na_certain_col(self, data, columns):
+        """drops rows which have nans according to certain column"""
+        return data.dropna(subset=[columns])
+
     def prepare_trainset(self, data_path, cat_columns=True):
         """ Prepare X, y and cat_features for models
-        :param: cat_columns: categorical features
+        :param: cat_columns: whether to use categorical features
         """
-        #self.train_data = self.train_data.fillna
         train_data = self.opener(data_path)
         X = train_data.drop(self.cat_columns+self.target, axis=1)
         y = train_data[self.target].values
@@ -26,4 +29,6 @@ class Preprocess:
             cat_features = train_data[self.cat_columns].values
             return X, y, cat_features
         return X, y
+
+    # todo обработка drive license
 
