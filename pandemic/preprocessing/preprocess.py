@@ -14,6 +14,15 @@ class Preprocess:
                             'retraining_ready', 'publish_date']
 
     def opener(self, data_path):
+        """
+
+        Args:
+            data_path:
+
+        Returns:
+
+        """
+
         return pd.read_csv(data_path, sep=';')
 
     def drop_na_certain_col(self, data, columns):
